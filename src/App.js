@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { TicTacToe } from "./components/TicTacToe";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+export const App = () => {
+  return <TicTacToe/>
+};
 
-export default App;
+// Square
+  // value (prop)
+  // onClick function (prop)
+
+// board
+  // state
+    // boardState
+    // turnState
+  // handleCLick
+    // copy of our board state
+    // if the index of the board is filled, return
+    // mutate that copy, and add X or O
+    // calculate next turn
+    // set the state of the board
+    // set the state of the turn
+
+  // function that calculates the winner
